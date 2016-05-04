@@ -10,19 +10,15 @@ use pocketmine\utils\TextFormat as TF;
 
 class Main extends PluginBase implements Listener{
 
-public function onEnable(){
-
+public function onEnable() {
   $this->getLogger()->notice("Enabled!");
   $this->getServer()->getPluginManager()->registerEvents($this, $this);
 }
-  public function onChat(PlayerChatEvent $event){
-
+  public function onChat(PlayerChatEvent $event) {
     $player = $event->getPlayer();
     $heartemoji = "♥";
     $msg = $event->getMessage();
-    if($msg === "<3" or "i love you"){
+    if(strpbrk("<3",strtolower($msg))) {
       $event->setMessage($heartemoji);
     }
-
 }
-    
