@@ -11,7 +11,7 @@ use pocketmine\utils\TextFormat as TF;
 class Main extends PluginBase implements Listener{
 
 public function onEnable() {
-  $this->getLogger()->notice("Enabled!");
+  Server::getInstance()->getLogger()->info(TF::RED."[".TF::GREEN."Server".TF::BLUE."Emoji".TF::RED."] ".TF::YELLOW."ServerEmoji by LostTeam enabled!");
   $this->getServer()->getPluginManager()->registerEvents($this, $this);
 }
   public function onChat(PlayerChatEvent $event) {
