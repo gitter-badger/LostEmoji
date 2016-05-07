@@ -1,6 +1,6 @@
 <?php
 
-namespace LostTeam;
+namespace LostTeam\ServerEmoji;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;	
