@@ -1,5 +1,6 @@
-name: ServerEmoji
+name: LostEmoji
 version: 1.0.0
-api: 2.0.0
+api: [2.0.0, 1.13.1]
 main: LostTeam\Main
-author: LostTeam
+author: "LostTeam"
+description: "Emoji for your server!"
